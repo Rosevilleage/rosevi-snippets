@@ -1,41 +1,37 @@
 {
   "name": "simple-react-snippets",
-  "displayName": "simple-react-snippets",
-  "description": "",
+  "displayName": "Simple React Snippets",
+  "description": "A collection of concise and practical React + TypeScript snippets for everyday development.",
   "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.105.0"
+  "publisher": "rosevilleage",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-github-username/simple-react-snippets"
   },
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [],
-  "main": "./out/extension.js",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": ["Snippets"],
+  "icon": "images/icon.png",
   "contributes": {
-    "commands": [
+    "snippets": [
       {
-        "command": "simple-react-snippets.helloWorld",
-        "title": "Hello World"
+        "language": "typescriptreact",
+        "path": "./snippets/react-snippet.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/react-snippet.code-snippets"
       }
     ]
   },
-  "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile && npm run lint",
-    "lint": "eslint src",
-    "test": "vscode-test"
-  },
-  "devDependencies": {
-    "@types/vscode": "^1.105.0",
-    "@types/mocha": "^10.0.10",
-    "@types/node": "22.x",
-    "@typescript-eslint/eslint-plugin": "^8.45.0",
-    "@typescript-eslint/parser": "^8.45.0",
-    "eslint": "^9.36.0",
-    "typescript": "^5.9.3",
-    "@vscode/test-cli": "^0.0.11",
-    "@vscode/test-electron": "^2.5.2"
-  }
+  "keywords": [
+    "react",
+    "typescript",
+    "snippets",
+    "jsx",
+    "tsx",
+    "component"
+  ],
+  "license": "MIT"
 }

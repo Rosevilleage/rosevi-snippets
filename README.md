@@ -1,71 +1,51 @@
-# simple-react-snippets README
+# Simple React Snippets
 
-This is the README for your extension "simple-react-snippets". After writing up a brief description, we recommend including the following sections.
-
-## Features
-
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+A clean, lightweight, and practical collection of **React + TypeScript** snippets designed for everyday frontend development.
 
 ---
 
-## Following extension guidelines
+## Features
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+- Fast and minimal
+- Supports both **TypeScript** and **JavaScript**
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+---
 
-## Working with Markdown
+## Available Snippets
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+| Prefix | Description                                                      |
+| ------ | ---------------------------------------------------------------- |
+| `trae` | React arrow function component (TypeScript, with export default) |
+| `trfe` | React function component (TypeScript, with export default)       |
+| `tra`  | React arrow function component (JS, no export)                   |
+| `trf`  | React function component (JS, no export)                         |
+| `rae`  | React arrow function component (JS, export default)              |
+| `rfe`  | React function component (JS, export default)                    |
+| `ust`  | `useState` hook                                                  |
+| `ustt` | TypeScript `useState` hook                                       |
+| `urf`  | `useRef` hook                                                    |
+| `uef`  | `useEffect` hook                                                 |
+| `ulef` | `useLayoutEffect` hook                                           |
+| `usee` | `useEffectEvent` hook                                            |
+| `fn`   | Regular function                                                 |
+| `tfn`  | TypeScript function with return type                             |
+| `af`   | Arrow function                                                   |
+| `taf`  | TypeScript arrow function with return type                       |
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+---
 
-## For more information
+## Example Usage
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+Type the prefix (e.g., `trae`) and press `Tab` → the snippet expands automatically:
 
-**Enjoy!**
+```tsx
+import React, { ReactElement } from "react";
+
+interface ExampleProps {}
+
+const Example = ({}: ExampleProps): ReactElement => {
+  return <div className="Example">Example</div>;
+};
+
+export default Example;
+```
