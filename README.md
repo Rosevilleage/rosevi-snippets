@@ -1,4 +1,4 @@
-# Simple React Snippets
+# Rosevi Snippets React
 
 A clean, lightweight, and practical collection of **React + TypeScript** snippets designed for everyday frontend development.
 
@@ -24,9 +24,9 @@ A clean, lightweight, and practical collection of **React + TypeScript** snippet
 | `ust`  | `useState` hook                                                  |
 | `ustt` | TypeScript `useState` hook                                       |
 | `urf`  | `useRef` hook                                                    |
-| `uef`  | `useEffect` hook                                                 |
-| `ulef` | `useLayoutEffect` hook                                           |
-| `usee` | `useEffectEvent` hook                                            |
+| `ue`   | `useEffect` hook                                                 |
+| `ule`  | `useLayoutEffect` hook                                           |
+| `uee`  | `useEffectEvent` hook                                            |
 | `fn`   | Regular function                                                 |
 | `tfn`  | TypeScript function with return type                             |
 | `af`   | Arrow function                                                   |
