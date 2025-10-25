@@ -1,0 +1,195 @@
+{
+  "React type arrow function export": {
+    "prefix": "trae",
+    "body": [
+      "import React, { ReactElement } from 'react'",
+      "",
+      "interface ${1:${TM_FILENAME_BASE}}Props {",
+      "\t${2}",
+      "}",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = ({${3}}: ${1:${TM_FILENAME_BASE}}Props): ReactElement => {",
+      "\treturn (",
+      "\t\t<div className=\"\">${4:${TM_FILENAME_BASE}}</div>",
+      "\t)",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "TypeScript React arrow function component with export default"
+  },
+
+  "React type function export": {
+    "prefix": "trfe",
+    "body": [
+      "import React, { ReactElement } from 'react'",
+      "",
+      "interface ${1:${TM_FILENAME_BASE}}Props {",
+      "\t${2}",
+      "}",
+      "",
+      "export default function ${1:${TM_FILENAME_BASE}}({${3}}: ${1:${TM_FILENAME_BASE}}Props): ReactElement {",
+      "\treturn (",
+      "\t\t<div className=\"\">${4:${TM_FILENAME_BASE}}</div>",
+      "\t)",
+      "}"
+    ],
+    "description": "TypeScript React function component with export default"
+  },
+
+  "TypeScript React arrow function": {
+    "prefix": "tra",
+    "body": [
+      "import React, { ReactElement } from 'react'",
+      "",
+      "interface ${1:${TM_FILENAME_BASE}}Props {",
+      "\t${2}",
+      "}",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = ({${3}}: ${1:${TM_FILENAME_BASE}}Props): ReactElement => {",
+      "\treturn (",
+      "\t\t<div className=\"\">${4:${TM_FILENAME_BASE}}</div>",
+      "\t)",
+      "}"
+    ],
+    "description": "TypeScript React arrow function component"
+  },
+
+  "TypeScript React function": {
+    "prefix": "trf",
+    "body": [
+      "import React, { ReactElement } from 'react'",
+      "",
+      "interface ${1:${TM_FILENAME_BASE}}Props {",
+      "\t${2}",
+      "}",
+      "",
+      "function ${1:${TM_FILENAME_BASE}}({${3}}: ${1:${TM_FILENAME_BASE}}Props): ReactElement {",
+      "\treturn (",
+      "\t\t<div className=\"\">${4:${TM_FILENAME_BASE}}</div>",
+      "\t)",
+      "}"
+    ],
+    "description": "TypeScript React function component"
+  },
+
+  "React arrow function": {
+    "prefix": "ra",
+    "body": [
+      "import React from 'react'",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = ({${2}}) => {",
+      "\treturn (",
+      "\t\t<div className=\"\">${3:${TM_FILENAME_BASE}}</div>",
+      "\t)",
+      "}"
+    ],
+    "description": "JavaScript React arrow function component"
+  },
+
+  "React function": {
+    "prefix": "rf",
+    "body": [
+      "import React from 'react'",
+      "",
+      "function ${1:${TM_FILENAME_BASE}}({${2}}) {",
+      "\treturn (",
+      "\t\t<div className=\"\">${3:${TM_FILENAME_BASE}}</div>",
+      "\t)",
+      "}"
+    ],
+    "description": "JavaScript React function component"
+  },
+
+  "React arrow function export": {
+    "prefix": "rae",
+    "body": [
+      "import React from 'react'",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = ({${2}}) => {",
+      "\treturn (",
+      "\t\t<div className=\"\">${3:${TM_FILENAME_BASE}}</div>",
+      "\t)",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "JavaScript React arrow function component with export default"
+  },
+
+  "React function export": {
+    "prefix": "rfe",
+    "body": [
+      "import React from 'react'",
+      "",
+      "export default function ${1:${TM_FILENAME_BASE}}({${2}}) {",
+      "\treturn (",
+      "\t\t<div className=\"\">${3:${TM_FILENAME_BASE}}</div>",
+      "\t)",
+      "}"
+    ],
+    "description": "JavaScript React function component with export default"
+  },
+
+  "useState": {
+    "prefix": "ust",
+    "body": [
+      "const [${1:state}, set${2:State}] = useState(${3:null})"
+    ],
+    "description": "React useState hook"
+  },
+
+  "useState TypeScript": {
+    "prefix": "ustt",
+    "body": [
+      "const [${1:state}, set${2:State}] = useState<${3:type}>(${4:initialValue})"
+    ],
+    "description": "TypeScript React useState hook"
+  },
+
+  "useRef": {
+    "prefix": "ur",
+    "body": [
+      "const ${1:ref} = useRef(${2:null})"
+    ],
+    "description": "React useRef hook"
+  },
+
+  "useRef TypeScript": {
+    "prefix": "urt",
+    "body": [
+      "const ${1:ref} = useRef<${2:HTMLDivElement | null}>(null)"
+    ],
+    "description": "TypeScript React useRef hook"
+  },
+
+  "useEffect": {
+    "prefix": "ue",
+    "body": [
+      "useEffect(() => {",
+      "\t${1}",
+      "}, [${2}])"
+    ],
+    "description": "React useEffect hook"
+  },
+
+  "useLayoutEffect": {
+    "prefix": "ule",
+    "body": [
+      "useLayoutEffect(() => {",
+      "\t${1}",
+      "}, [${2}])"
+    ],
+    "description": "React useLayoutEffect hook"
+  },
+
+  "useEffectEvent": {
+    "prefix": "uee",
+    "body": [
+      "const ${1:onEvent} = useEffectEvent(() => {",
+      "\t${2}",
+      "})"
+    ],
+    "description": "React useEffectEvent hook"
+  }
+}
